@@ -1,0 +1,95 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.counters{
+  margin-right: 30px;
+  font-size: 10px;
+  text-align: center;
+
+  .vote,.answer{
+    height: 60px;
+    width: 60px;
+  }
+  strong{
+    font-size: 2em;
+    display: block;
+  }
+
+  .status{
+    &.unanswered{
+      border:none;
+    }
+    &.answered{
+      border:1px solid $color-green;
+      color: $color-green;
+    }
+    &.answered-accepted{
+      border: 1px solid $color-green;
+      color: $color-green;
+      padding: 5px;
+    }
+  }
+  .views{
+    margin-top: 10px;
+  }
+}
+.form-delete{
+  display: inline;
+}
+.votes-control{
+  margin-right:30px;
+  text-align:center;
+  min-width: 60px;
+  color: $gray-700;
+
+  span, a{
+    display: block;
+  }
+  span, a{
+    &.votes-count{
+      font-size: 25px;
+      color: $gray-600;
+    }
+    &.faborited{
+      font-size: 12px;
+    }
+  }
+  a{
+    cursor: pointer;
+
+    &.off, &.off:hover{
+      color: $gray-500;
+    }
+    &.fabs, &.fabs:hover{
+      color: $blue;
+    }
+    &.vote-accept{
+      color: $green;
+    }
+  }
+}
+[v-cloak]{
+  display: none;
+}
+ul.navbar li {
+  list-style-type: none;
+}
+.navbar-laravel {
+  border-top: 5px solid darkslateblue;
+}
+nav.navbar ul li a {
+  color: #000;
+  font-size: 16px;
+}
